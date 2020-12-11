@@ -9,7 +9,7 @@
                     <side-menu-item v-if="item.children && item.children.length>1" :key="`menu-${item.name}`" :parent-item="item"/>
                     <!--子子路由0个-->
                     <menu-item v-else :key="`menu-${item.children[0].name}`" :name="getNameOrHref(item,true)">
-                        <Icon :type="item.icon"></Icon>
+                        <Icon :type="item.icon" ></Icon>
                         <span>{{ item.children[0].meta.title }}</span>
                     </menu-item>
                 </template>
@@ -19,7 +19,7 @@
                     <side-menu-item v-if="item.children && item.children.length>1" :key="`menu-${item.name}`" :parent-item="item"/>
                     <!--没有子路由-->
                     <menu-item v-else :name="getNameOrHref(item,false)" :key="`menu-${item.name}`">
-                        <Icon :type="item.icon"></Icon>
+                        <Icon :type="item.icon" size="21"></Icon>
                         <span>{{ item.meta.title}}</span>
                     </menu-item>
                 </template>

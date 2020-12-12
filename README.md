@@ -1,7 +1,7 @@
 # oavue
 
 > 一个OA系统前端,vue+view design
->项目正在编写中，敬请期待......
+>项目正在编写中
 
 ## Build Setup
 
